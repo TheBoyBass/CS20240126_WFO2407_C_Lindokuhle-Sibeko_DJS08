@@ -14,10 +14,20 @@
  * linked in the slides.
  */
 
+
+// Import the necessary components
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 function App() {
 
   return (
-    <h1>Start here</h1>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   )
 }
 

@@ -161,6 +161,8 @@ footer {
 /*** ABOUT PAGE ***/
 .about-hero-image {
   max-width: 100%;
+  height: auto;
+  width:fit-content;
 }
 
 .about-page-content {

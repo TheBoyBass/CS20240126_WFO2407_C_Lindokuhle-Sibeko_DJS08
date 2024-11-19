@@ -2,11 +2,13 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-    </nav>
-  );
+    <header>
+        <Link className="site-logo" to="/">#VanLife</Link>
+        <nav>
+        <Link to="/about">About</Link>
+        </nav>
+    </header>
+    );
 }
 
 export default Navbar;
